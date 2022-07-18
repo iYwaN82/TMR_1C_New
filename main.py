@@ -29,7 +29,7 @@ dir = os.path.abspath(os.curdir)
 
 
 # Читаем конфиг
-ini = configparser.ConfigParser()  # создаём объекта парсера
+ini = configparser.ConfigParser()  # создаём объекта парсераpip install auto-py-to-exe
 ini.read(dir + "\\settings.ini")  # читаем конфиг
 
 
