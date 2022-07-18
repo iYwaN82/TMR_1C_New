@@ -4,17 +4,18 @@ import os.path
 import re
 import shutil
 import sys
+import xml.etree.cElementTree as xml
 from os.path import abspath
+from winreg import *
+
 import PyQt5
 import fdb
 import pandas as pd
 import win32com.client as win32
 from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import QFileDialog
-import design
-from winreg import *
-import xml.etree.cElementTree as xml
 
+import design
 
 # Текущая Директория программы TMR-Tracker и Install.log
 key = OpenKey(HKEY_LOCAL_MACHINE, r'SOFTWARE\WOW6432Node\DigiStar\TMR Tracker')

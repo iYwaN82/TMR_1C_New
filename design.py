@@ -1,7 +1,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QPushButton, QGridLayout
 
-from main import dbs
+#from main import dbs
 
 
 class SecondWindow(QtWidgets.QWidget):
@@ -97,6 +97,7 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.b_run, 0, 4, 1, 1)
         self.b_find = QtWidgets.QToolButton(self.centralwidget)
         self.b_find.setObjectName("b_find")
+        self.b_find.hide()
         self.gridLayout.addWidget(self.b_find, 0, 3, 1, 1)
         self.b_save = QtWidgets.QPushButton(self.centralwidget)
         self.b_save.setObjectName("b_save")
